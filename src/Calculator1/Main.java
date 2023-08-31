@@ -121,7 +121,14 @@ public class Main {
                     case "+" -> System.out.println(a + b);
                     case "-" -> System.out.println(a - b);
                     case "*" -> System.out.println(a * b);
+<<<<<<< HEAD
                     case "/" -> System.out.println(a / b);
+=======
+                    case "/" -> {
+                        if (b==0) throw new Exception("throws Exception");
+                        else System.out.println(a / b);
+                    }
+>>>>>>> c21e9a9 (Initial commit)
                 }
             } else if (isRoman(x) && isRoman(y)) { // работаем с римскими числами
 
